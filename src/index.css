@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Paleta inspirada na Carmen Sevilla - tons elegantes e médicos */
+    /* Paleta inspirada na Carmem Sevilla - tons elegantes e médicos */
     --primary: 25 95% 53%; /* Laranja vibrante do site original */
     --primary-foreground: 0 0% 100%;
     --primary-hover: 25 95% 48%;
@@ -39,19 +39,29 @@ All colors MUST be HSL.
     --ring: 25 95% 53%;
 
     /* Cores customizadas para o tema médico/estético */
-    --medical-primary: 25 95% 53%; /* Laranja elegante */
+    --medical-primary: 142 76% 36%; /* Verde saúde */
+    --medical-accent: 25 95% 53%; /* Laranja elegante */
     --medical-secondary: 220 14% 96%; /* Cinza suave */
-    --medical-accent: 142 76% 36%; /* Verde saúde */
     --medical-dark: 222.2 84% 4.9%; /* Azul escuro profissional */
     
     /* Gradientes */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--medical-primary)), hsl(25 95% 60%));
-    --gradient-cta: linear-gradient(90deg, hsl(var(--medical-primary)), hsl(25 95% 48%));
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(var(--medical-primary)),
+      hsl(25 95% 60%)
+    );
+    --gradient-cta: linear-gradient(
+      90deg,
+      hsl(var(--medical-primary)),
+      hsl(25 95% 48%)
+    );
     --gradient-section: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 100%));
     
     /* Sombras elegantes */
-    --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
     --shadow-large: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --shadow-cta: 0 10px 30px -10px hsl(var(--medical-primary) / 0.4);
     

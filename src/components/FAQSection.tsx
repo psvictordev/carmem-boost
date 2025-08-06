@@ -14,7 +14,8 @@ export const FAQSection = () => {
     },
     {
       question: "Quanto tempo leva para ver os primeiros resultados?",
-      answer: "Os primeiros resultados são visíveis já na primeira semana de tratamento. O protocolo completo varia de acordo com cada caso, mas geralmente entre 4 a 8 sessões, sempre personalizado conforme seu diagnóstico individual."
+      answer:
+        "O resultados são visíveis já nos primeiros 7 dias de tratamento.",
     },
     {
       question: "O tratamento é doloroso?",
@@ -25,16 +26,19 @@ export const FAQSection = () => {
       answer: "Sim, o método Contour é especialmente eficaz para correção de diástase abdominal. Utilizamos técnicas específicas que fortalecem a musculatura profunda e aproximam os músculos separados, sem necessidade de cirurgia."
     },
     {
-      question: "Qual a diferença dos outros tratamentos estéticos?",
-      answer: "O diferencial está no diagnóstico personalizado completo (biorressonância, bioimpedância, adipometria) que nos permite entender exatamente seu tipo de gordura, histórico hormonal e necessidades específicas. Não é um tratamento genérico."
+      question: "Qual o diferencial da consulta bio premium?",
+      answer:
+        "O diferencial está no diagnóstico personalizado completo (biorressonância, bioimpedância, adipometria, exame bidigital) que nos permite entender exatamente seu tipo de gordura, histórico hormonal e necessidades específicas. Não é apenas uma avaliação.",
     },
     {
       question: "Preciso fazer dieta rigorosa durante o tratamento?",
-      answer: "Não é necessária uma dieta rigorosa. Fornecemos orientações nutricionais personalizadas baseadas no seu mapeamento metabólico, priorizando uma alimentação equilibrada e sustentável."
+      answer:
+        "No nosso tratamento não há necessidade de pesar comida, contar calorias, e nem passar fome. Fornecemos orientações nutricionais personalizadas baseadas no seu mapeamento metabólico, priorizando uma alimentação equilibrada e sustentável.",
     },
     {
       question: "Quanto custa o tratamento completo?",
-      answer: "O investimento varia conforme seu diagnóstico personalizado e plano de tratamento. Na consulta Bio Premium, apresentamos todas as opções com valores transparentes e condições de pagamento facilitadas."
+      answer:
+        "O investimento varia conforme seu diagnóstico personalizado e plano de transformação. Na consulta Bio Premium, apresentamos todas as opções com valores transparentes e condições de pagamento facilitadas.",
     },
     {
       question: "Há garantia de resultados?",

@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, CheckCircle } from "lucide-react";
 
 export const HeroSection = () => {
-  const scrollToConsulta = () => {
-    document.getElementById('consulta-section')?.scrollIntoView({ behavior: 'smooth' });
+  const handleWhatsAppContact = () => {
+    const message = encodeURIComponent(
+      "Olá! Gostaria de mais informações sobre o método Contour."
+    );
+    window.open(`https://wa.me/559484413360?text=${message}`, "_blank");
   };
 
   return (
@@ -60,10 +63,10 @@ export const HeroSection = () => {
           </div>
 
           {/* CTA Button */}
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-white text-medical-primary hover:bg-orange-50 shadow-cta text-lg px-8 py-6 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-large"
-            onClick={scrollToConsulta}
+            onClick={handleWhatsAppContact}
           >
             Agendar Consulta Bio Premium
           </Button>

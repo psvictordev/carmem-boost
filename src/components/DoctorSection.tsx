@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, GraduationCap, Users, Star, CheckCircle } from "lucide-react";
+import profilePhoto from "./../profilePhoto.png";
 
 export const DoctorSection = () => {
   const credentials = [
@@ -12,9 +13,12 @@ export const DoctorSection = () => {
   ];
 
   const achievements = [
-    { icon: <Users className="w-5 h-5" />, text: "+500 pacientes transformadas" },
+    {
+      icon: <Users className="w-5 h-5" />,
+      text: "Centenas de pacientes transformadas",
+    },
     { icon: <Star className="w-5 h-5" />, text: "98% de satisfação" },
-    { icon: <Award className="w-5 h-5" />, text: "Pioneira no método Contour" }
+    { icon: <Award className="w-5 h-5" />, text: "Criadora do método Contour" },
   ];
 
   return (
@@ -26,11 +30,13 @@ export const DoctorSection = () => {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-medical-primary/10 to-orange-100/50 rounded-3xl flex items-center justify-center">
                 <div className="text-center text-gray-400">
-                  <div className="w-32 h-32 bg-medical-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <GraduationCap className="w-16 h-16 text-medical-primary" />
+                  <img src={profilePhoto} alt="Logo" className="p-8" />
+                  <div className="w-16 h-16 bg-medical-primary/20 rounded-full mx-auto mb-1 flex items-center justify-center">
+                    <GraduationCap className="w-8 h-8 text-medical-primary" />
                   </div>
-                  <p className="text-lg font-medium">Dra. Carmen Sevilla</p>
-                  <p className="text-sm">Foto Profissional</p>
+                  <p className="text-lg font-medium mb-4">
+                    Dra. Carmem Sevilla
+                  </p>
                 </div>
               </div>
               
@@ -58,13 +64,15 @@ export const DoctorSection = () => {
               </Badge>
 
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-medical-dark">
-                Dra. Carmen Sevilla
+                Dra. Carmem Sevilla
               </h2>
 
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Pioneira no Brasil em <strong>reconstrução abdominal não cirúrgica</strong>, 
-                a Dra. Carmen desenvolveu o método Contour após anos de estudos em 
-                protocolos europeus e bioengenharia estética.
+                Carmem Sevilla é Biomédica Esteta, especialista em Reconstrução
+                Abdominal Não Cirúrgica e criadora de métodos exclusivos que já
+                transformaram a autoestima e o corpo de centenas de mulheres.
+                Sua consulta vai muito além de uma avaliação estética: é o
+                primeiro passo para uma nova versão de si mesma.
               </p>
 
               {/* Credentials */}
@@ -101,12 +109,13 @@ export const DoctorSection = () => {
               {/* Quote */}
               <div className="mt-8 p-6 bg-medical-primary/5 rounded-2xl border-l-4 border-medical-primary">
                 <p className="text-gray-700 italic leading-relaxed">
-                  "Minha missão é devolver às mulheres não apenas seus corpos, 
-                  mas sua autoestima e confiança. Cada tratamento é único, 
-                  porque cada mulher é única."
+                  "Minha missão vai além do corpo: é devolver às mulheres a
+                  autoestima, a confiança e o brilho no olhar. Porque cada
+                  mulher é única — e merece um tratamento à altura da sua
+                  história."
                 </p>
                 <p className="text-right mt-3 font-semibold text-medical-dark">
-                  — Dra. Carmen Sevilla
+                  — Dra. Carmem Sevilla
                 </p>
               </div>
             </div>

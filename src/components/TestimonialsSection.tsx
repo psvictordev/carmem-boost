@@ -16,7 +16,8 @@ export const TestimonialsSection = () => {
       name: "Ana Paula",
       age: "28 anos", 
       result: "Corrigiu diástase abdominal",
-      content: "Sofria com diástase pós-parto há 2 anos. Tentei fisioterapia, exercícios... nada funcionava. A Dra. Carmen me explicou que cada caso é único. Hoje me sinto renovada!",
+      content:
+        "Sofria com diástase pós-parto há 2 anos. Tentei fisioterapia, exercícios... nada funcionava. A Dra. Carmem me explicou que cada caso é único. Hoje me sinto renovada!",
       rating: 5,
       initial: "A"
     },
@@ -70,16 +71,15 @@ export const TestimonialsSection = () => {
                   </p>
 
                   {/* Profile */}
-                  <div className="flex items-center gap-4">
-                    <Avatar className="w-12 h-12">
-                      <AvatarFallback className="bg-medical-primary text-white font-semibold">
-                        {testimonial.initial}
-                      </AvatarFallback>
-                    </Avatar>
+                  <div className="flex gap-4">
                     <div>
-                      <h4 className="font-semibold text-medical-dark">{testimonial.name}</h4>
+                      <h4 className="font-semibold text-medical-dark">
+                        {testimonial.name}
+                      </h4>
                       <p className="text-sm text-gray-500">{testimonial.age}</p>
-                      <p className="text-sm text-medical-primary font-medium">{testimonial.result}</p>
+                      <p className="text-sm text-medical-primary font-medium">
+                        {testimonial.result}
+                      </p>
                     </div>
                   </div>
                 </CardContent>

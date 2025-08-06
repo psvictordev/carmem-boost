@@ -4,8 +4,14 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from "lucide
 
 export const FooterSection = () => {
   const handleWhatsAppContact = () => {
-    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre o método Contour.");
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    const message = encodeURIComponent(
+      "Olá! Gostaria de mais informações sobre o método Contour."
+    );
+    window.open(`https://wa.me/559484413360?text=${message}`, "_blank");
+  };
+
+  const routeChangeInstagram = () => {
+    window.open(`https://www.instagram.com/carmemsevilla.stetic/`, "_blank");
   };
 
   return (
@@ -42,10 +48,10 @@ export const FooterSection = () => {
               {/* Contact Info */}
               <div>
                 <h3 className="text-2xl font-bold mb-6 text-medical-primary">
-                  Carmen Sevilla
+                  Carmem Sevilla
                 </h3>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  Especialista em reconstrução abdominal não cirúrgica. 
+                  Especialista em reconstrução abdominal não cirúrgica.
                   Devolvendo autoestima e confiança através do método Contour.
                 </p>
                 
@@ -88,9 +94,12 @@ export const FooterSection = () => {
                 <div className="mt-8">
                   <h4 className="text-xl font-semibold mb-4">Siga-nos</h4>
                   <div className="flex gap-4">
-                    <Button 
-                      size="sm" 
-                      variant="outline" 
+                    <Button
+                      onClick={() => {
+                        routeChangeInstagram();
+                      }}
+                      size="sm"
+                      variant="outline"
                       className="border-gray-600 text-gray-300 hover:bg-medical-primary hover:border-medical-primary hover:text-white"
                     >
                       <Instagram className="w-4 h-4" />
@@ -143,7 +152,7 @@ export const FooterSection = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
-              © 2024 Carmen Sevilla. Todos os direitos reservados.
+              © 2024 Carmem Sevilla. Todos os direitos reservados.
             </div>
             <div className="flex gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-medical-primary transition-colors">
