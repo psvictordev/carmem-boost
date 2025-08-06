@@ -1,17 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, GraduationCap, Users, Star, CheckCircle } from "lucide-react";
-import profilePhoto from "./../profilePhoto.png";
+import profilePhoto from "./../profilePhoto.webp";
 
 export const DoctorSection = () => {
-  const credentials = [
-    "Especialista em Medicina Estética",
-    "Formação em Protocolos Europeus", 
-    "Certificada em Bioengenharia Estética",
-    "Membro da Sociedade Brasileira de Medicina Estética",
-    "15 anos de experiência"
-  ];
-
   const achievements = [
     {
       icon: <Users className="w-5 h-5" />,
@@ -39,7 +31,7 @@ export const DoctorSection = () => {
                   </p>
                 </div>
               </div>
-              
+
               {/* Floating Badges */}
               <div className="absolute -top-4 -right-4">
                 <Badge className="bg-medical-primary text-white px-4 py-2 shadow-medium">
@@ -47,7 +39,7 @@ export const DoctorSection = () => {
                   Especialista
                 </Badge>
               </div>
-              
+
               <div className="absolute -bottom-4 -left-4">
                 <Badge className="bg-white text-medical-primary border border-medical-primary px-4 py-2 shadow-medium">
                   <Star className="w-4 h-4 mr-2" />
@@ -58,7 +50,10 @@ export const DoctorSection = () => {
 
             {/* Content Side */}
             <div>
-              <Badge variant="outline" className="mb-4 text-medical-primary border-medical-primary">
+              <Badge
+                variant="outline"
+                className="mb-4 text-medical-primary border-medical-primary"
+              >
                 <GraduationCap className="w-4 h-4 mr-2" />
                 Especialista Certificada
               </Badge>
@@ -74,21 +69,6 @@ export const DoctorSection = () => {
                 Sua consulta vai muito além de uma avaliação estética: é o
                 primeiro passo para uma nova versão de si mesma.
               </p>
-
-              {/* Credentials */}
-              <div className="mb-8">
-                <h3 className="text-lg font-semibold mb-4 text-medical-dark">
-                  Formação e Certificações:
-                </h3>
-                <div className="grid gap-2">
-                  {credentials.map((credential, index) => (
-                    <div key={index} className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-medical-accent flex-shrink-0" />
-                      <span className="text-gray-600">{credential}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
 
               {/* Achievements */}
               <div className="grid md:grid-cols-3 gap-4">
