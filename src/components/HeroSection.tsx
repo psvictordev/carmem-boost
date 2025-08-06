@@ -13,12 +13,18 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/20"></div>
-      
+
       {/* Floating medical equipment background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full animate-float"></div>
-        <div className="absolute bottom-32 right-20 w-24 h-24 bg-white/5 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+        <div
+          className="absolute bottom-32 right-20 w-24 h-24 bg-white/5 rounded-full animate-float"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-float"
+          style={{ animationDelay: "2s" }}
+        ></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -26,7 +32,9 @@ export const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-white/20">
             <CheckCircle className="w-4 h-4" />
-            <span className="text-sm font-medium">Método Exclusivo • Sem Cirurgia</span>
+            <span className="text-sm font-medium">
+              Método Exclusivo • Sem Cirurgia
+            </span>
           </div>
 
           {/* Main Headline */}
@@ -43,19 +51,25 @@ export const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-8 text-orange-100 max-w-3xl mx-auto leading-relaxed">
-            O método exclusivo que redefine abdômens sem cirurgia, sem cortes, sem sofrimento.{" "}
-            <strong className="text-white">Redução visível já na primeira semana.</strong>
+            O método exclusivo que redefine abdômens sem cirurgia, sem cortes,
+            sem sofrimento.{" "}
+            <strong className="text-white">
+              Redução visível já na primeira semana.
+            </strong>
           </p>
 
           {/* Key benefits */}
           <div className="flex flex-wrap justify-center gap-4 mb-10 text-sm md:text-base">
             {[
-              "Sem dor ou cirurgia",
+              "Sem cirurgia",
               "Resultados em 7 dias",
               "Método científico europeu",
-              "Atendimento personalizado"
+              "Atendimento personalizado",
             ].map((benefit, index) => (
-              <div key={index} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
+              <div
+                key={index}
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20"
+              >
                 <CheckCircle className="w-4 h-4 text-green-300" />
                 <span>{benefit}</span>
               </div>
@@ -74,7 +88,8 @@ export const HeroSection = () => {
           {/* Trust indicators */}
           <div className="mt-8 text-orange-100">
             <p className="text-sm">
-              ✨ Descubra como transformar seu antes em um depois de tirar o fôlego
+              ✨ Descubra como transformar seu antes em um depois de tirar o
+              fôlego
             </p>
           </div>
         </div>
