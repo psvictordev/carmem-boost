@@ -39,13 +39,6 @@ export const DoctorSection = () => {
                   Especialista
                 </Badge>
               </div>
-
-              <div className="absolute -bottom-4 -left-4">
-                <Badge className="bg-white text-medical-primary border border-medical-primary px-4 py-2 shadow-medium">
-                  <Star className="w-4 h-4 mr-2" />
-                  15 anos
-                </Badge>
-              </div>
             </div>
 
             {/* Content Side */}
