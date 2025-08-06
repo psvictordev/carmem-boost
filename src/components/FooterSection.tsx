@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram } from "lucide-react";
 
 export const FooterSection = () => {
   const handleWhatsAppContact = () => {
     const message = encodeURIComponent(
       "Olá! Gostaria de mais informações sobre o método Contour."
     );
-    window.open(`https://wa.me/559484413360?text=${message}`, "_blank");
+    window.open(`https://wa.me/5594984149190?text=${message}`, "_blank");
   };
 
   const routeChangeInstagram = () => {
@@ -26,8 +26,8 @@ export const FooterSection = () => {
             <p className="text-xl mb-8 opacity-90">
               Agende agora sua Consulta Bio Premium com 50% de desconto
             </p>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-medical-primary hover:bg-orange-50 shadow-large text-xl px-12 py-6 rounded-full font-bold transition-all duration-300 hover:scale-105"
               onClick={handleWhatsAppContact}
             >
@@ -54,44 +54,30 @@ export const FooterSection = () => {
                   Especialista em reconstrução abdominal não cirúrgica.
                   Devolvendo autoestima e confiança através do método Contour.
                 </p>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-medical-primary flex-shrink-0" />
                     <span className="text-gray-300">
-                      Rua dos Jardins, 123 - Jardins, São Paulo - SP
+                      Rua Santos Drumond, Bairro Belo Horizonte, Cidade Nova
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="w-5 h-5 text-medical-primary flex-shrink-0" />
-                    <span className="text-gray-300">(11) 99999-9999</span>
+                    <span className="text-gray-300">(94) 984149190</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-medical-primary flex-shrink-0" />
-                    <span className="text-gray-300">contato@carmemsevilla.com.br</span>
+                    <span className="text-gray-300">
+                      contato@carmemsevilla.com.br
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Opening Hours */}
               <div>
-                <h4 className="text-xl font-semibold mb-6">Horário de Atendimento</h4>
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-gray-300">Segunda à Sexta</span>
-                    <span className="text-white">8h às 18h</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-300">Sábado</span>
-                    <span className="text-white">8h às 14h</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-300">Domingo</span>
-                    <span className="text-white">Fechado</span>
-                  </div>
-                </div>
-
-                <div className="mt-8">
+                <div>
                   <h4 className="text-xl font-semibold mb-4">Siga-nos</h4>
                   <div className="flex gap-4">
                     <Button
@@ -103,20 +89,6 @@ export const FooterSection = () => {
                       className="border-gray-600 text-gray-300 hover:bg-medical-primary hover:border-medical-primary hover:text-white"
                     >
                       <Instagram className="w-4 h-4" />
-                    </Button>
-                    <Button 
-                      size="sm" 
-                      variant="outline" 
-                      className="border-gray-600 text-gray-300 hover:bg-medical-primary hover:border-medical-primary hover:text-white"
-                    >
-                      <Facebook className="w-4 h-4" />
-                    </Button>
-                    <Button 
-                      size="sm" 
-                      variant="outline" 
-                      className="border-gray-600 text-gray-300 hover:bg-medical-primary hover:border-medical-primary hover:text-white"
-                    >
-                      <Youtube className="w-4 h-4" />
                     </Button>
                   </div>
                 </div>
@@ -130,9 +102,10 @@ export const FooterSection = () => {
                       Atendimento Rápido
                     </h4>
                     <p className="text-gray-300 mb-6">
-                      Tire suas dúvidas ou agende sua consulta diretamente pelo WhatsApp
+                      Tire suas dúvidas ou agende sua consulta diretamente pelo
+                      WhatsApp
                     </p>
-                    <Button 
+                    <Button
                       className="w-full bg-green-600 hover:bg-green-700 text-white"
                       onClick={handleWhatsAppContact}
                     >
@@ -155,13 +128,22 @@ export const FooterSection = () => {
               © 2024 Carmem Sevilla. Todos os direitos reservados.
             </div>
             <div className="flex gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-medical-primary transition-colors">
+              <a
+                href="#"
+                className="hover:text-medical-primary transition-colors"
+              >
                 Política de Privacidade
               </a>
-              <a href="#" className="hover:text-medical-primary transition-colors">
+              <a
+                href="#"
+                className="hover:text-medical-primary transition-colors"
+              >
                 Termos de Uso
               </a>
-              <a href="#" className="hover:text-medical-primary transition-colors">
+              <a
+                href="#"
+                className="hover:text-medical-primary transition-colors"
+              >
                 LGPD
               </a>
             </div>

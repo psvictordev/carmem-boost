@@ -49,7 +49,7 @@ export const ConsultaSection = () => {
     const message = encodeURIComponent(
       "Olá! Gostaria de agendar minha Consulta Bio Premium com 50% de desconto."
     );
-    window.open(`https://wa.me/559484413360?text=${message}`, "_blank");
+    window.open(`https://wa.me/5594984149190?text=${message}`, "_blank");
   };
 
   return (

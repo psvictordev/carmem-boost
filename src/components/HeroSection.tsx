@@ -6,7 +6,7 @@ export const HeroSection = () => {
     const message = encodeURIComponent(
       "Olá! Gostaria de mais informações sobre o método Contour."
     );
-    window.open(`https://wa.me/559484413360?text=${message}`, "_blank");
+    window.open(`https://wa.me/5594984149190?text=${message}`, "_blank");
   };
 
   return (
