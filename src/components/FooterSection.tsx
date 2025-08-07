@@ -17,7 +17,7 @@ export const FooterSection = () => {
   return (
     <footer className="bg-medical-dark text-white">
       {/* Final CTA Section */}
-      <div className="py-16 bg-gradient-to-r from-medical-primary to-orange-400">
+      <div className="py-16 bg-gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

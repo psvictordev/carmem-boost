@@ -112,7 +112,7 @@ export const ConsultaSection = () => {
 
           {/* Key Benefit */}
           <div className="text-center mb-16">
-            <div className="bg-gradient-to-r from-medical-primary to-orange-400 text-white rounded-3xl p-8 max-w-4xl mx-auto">
+            <div className="bg-gradient-hero text-white rounded-3xl p-8 max-w-4xl mx-auto">
               <Target className="w-12 h-12 mx-auto mb-4" />
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
                 Tudo isso para entender o seu corpo de forma única
@@ -151,7 +151,7 @@ export const ConsultaSection = () => {
 
                   {/* Pricing */}
                   <div className="text-center mb-8">
-                    <div className="inline-block bg-gradient-to-r from-medical-primary to-orange-400 text-white rounded-2xl p-6 mb-6">
+                    <div className="inline-block bg-gradient-hero text-white rounded-2xl p-6 mb-6">
                       <div className="flex items-center justify-center gap-4 flex-wrap">
                         <div>
                           <span className="text-xl text-orange-200 line-through">
@@ -200,7 +200,7 @@ export const ConsultaSection = () => {
                   <div className="text-center mb-6">
                     <Button
                       size="lg"
-                      className="bg-gradient-cta hover:scale-105 text-white shadow-cta text-xl px-12 py-6 rounded-full font-bold transition-all duration-300"
+                      className="bg-gradient-hero hover:scale-105 text-white shadow-cta text-xl px-12 py-6 rounded-full font-bold transition-all duration-300"
                       onClick={handleAgendarConsulta}
                     >
                       SIM, QUERO GARANTIR MINHA VAGA COM DESCONTO
